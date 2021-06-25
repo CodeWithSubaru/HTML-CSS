@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+ :root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white1: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: 'Lexend Deca', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+section {
+    background-color: var(--dark-desaturated-blue);
+    margin: 50px 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+section .picture {
+    background: url("images/image-header-mobile.jpg") no-repeat center/cover;
+    height: 400px;
+    background-blend-mode: multiply;
+    background-color: #643783;
+    height: 400px;
+    border-radius: 10px;
+}
+
+section .card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+section .card p {
+    padding: 0 20px;
+    line-height: 2;
+    color: var(--slightly-transparent-white);
+}
+
+section .card {
+    padding: 20px;
+}
+
+section .card ul {
+    display: flex;
+    flex-direction: column;
+}
+
+section .card li {
+    list-style-type: none;
+    margin-top: 2.5rem;
+    color: var(--slightly-transparent-white1);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+section .card li .number-style:first-child {
+    text-transform: lowercase;
+}
+
+section .card .number-style {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+}
+
+span {
+    color: #9A5AC8;
+}
+
+@media (min-width: 365px) {
+    section {
+        display: flex;
+    }
+}
